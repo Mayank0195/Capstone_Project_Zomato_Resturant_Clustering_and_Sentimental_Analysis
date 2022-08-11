@@ -12,14 +12,20 @@ Data could be used for sentiment analysis. Also, the reviewers' metadata can be 
 ## Approach:
 
 The approach followed here is to first check the sanctity of the data and then understand the features involved. The events followed were in our approach:
+
 ●	Understanding the business problem and the datasets
+
 ●	Data cleaning and preprocessing- Both datasets required little cleaning; all that was required was to remove certain null values, convert values to acceptable data types, and select only the most significant features. Features like Link, Collections, and Timing, for example, don't help distinguish across instances.
+
 ●	Feature Engineering: 
 The process of selecting, modifying, and transforming raw data into meaningful numerical features that machine learning algorithms can exploit is known as feature engineering. 
+
 ●	Exploratory data analysis- of categorical and continuous variables against our target variable.
+
 ●	Restaurant Clustering: Clustering is done based on the two approaches 
 1.	K-mean 
 2.	Principal Component Analysis
+3.	
 ●	Sentiment Analysis: Sentiment analysis is done using a different machine learning model. The selected model should be able to predict a False positive that is the sentiment is actually negative but the model predicted it as a positive one.
 
 ## Conclusion:
@@ -31,18 +37,23 @@ Some important insights to draw from the analysis include:
 
 ●	The best restaurants in Hyderabad are
 AB's - Absolute Barbecues, B-Dubs, and 3B's - Buddies, Bar & Barbecue.
+
 ●	The most popular cuisines are the cuisines that most of the restaurants are willing to provide. The most popular cuisines in Hyderabad are North Indian, Chinese,
 Continental, and Hyderabadi.
-●	The restaurants in Hyderabadi have a flexible per person cost of 150 INR to 2800 INR. The cheapest is the food joint called Mohammedia Shawarma and the costliest restaurant is Collage - Hyatt
-Hyderabad Gachibowli.
+
+●	The restaurants in Hyderabadi have a flexible per person cost of 150 INR to 2800 INR. The cheapest is the food joint called Mohammedia Shawarma and the costliest restaurant is Collage - Hyatt Hyderabad Gachibowli.
+
 ●	Upon conducting a basic cost-benefit analysis on Zomato with a few
 assumptions one basis of the little business understanding that could be gathered, it can be concluded that it is important to separate out the restaurants with the lowest rating in order to improve its overall customer experience. These restaurants were small food joints or restaurants with high prices according to the food they were serving. Efforts should
 be made to advertise more and analyze the reviews, especially for these restaurants, and work on them. Mohammedia Shawarma seems to be profitable.
+
 ●	Restaurant Clustering was done in two approaches. First with just two features and then with all of them. K means
 Clustering worked well in the first approach but as we increase the
 dimensions, it isn't able to distinguish the clusters hence principal component
 analysis was done and then clustered into 6 clusters. The similarities in the data points within the clusters were pretty great.
+
 ●	Critics in the Industry were identified by grouping the customers with a good number of followers who have given more reviews with constantly low ratings. Sumit, D.S, and Ram Raju are the top three critics.
+
 ●	Sentiment Analysis was done on the reviews and a model was trained in order to identify negative and positive
 sentiments. Even though the number of false negatives is lower in the case of Multinomial NB and Logistic Regression than in Light GBM, it is performing better in terms of   reducing False positives. This indicates that Multinomial NB and Logistic Regression is penalizing False positives more just as we want.
 
