@@ -64,5 +64,6 @@ sentiments. Even though the number of false negatives is lower in the case of Mu
 ## Recommendations:
 
 ●	Negative reviews should be approached to reach a win-win solution.
+
 ●	Ratings should be gathered according to categories, such as packing, delivery, taste, quality, amount, and service. This would aid in identifying and addressing lagging fields.
 
